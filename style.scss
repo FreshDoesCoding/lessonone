@@ -3,3 +3,28 @@
 * {
   font-family: 'Poppins';
 }
+
+body {
+  background-color: rgb(24, 23, 23);
+  color: white;
+}
+
+.image-of-me {
+  opacity: 0.5; /* Initial opacity set to 50% */
+  transition: opacity 1s, transform 1s; /* Smooth transition over 1 second */
+}
+
+.image-of-me:hover {
+  transform: translateX(-100%);
+  animation-name: me;
+  opacity: 1;
+}
+
+@keyframes me {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
